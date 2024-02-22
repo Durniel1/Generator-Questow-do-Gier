@@ -2,6 +2,37 @@
 
 Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych zadań i przygód dla postaci gracza.
 
+## Instrukcja użytkowania:
+
+1. **Wybieranie wartości wymaganych**
+
+- Należy wybrać z list rozwijanych wartości potrzebne dla generatera w celu stworzenia zadania.
+- Każda z list daje opcje wyboru 1 wartości, należy dobrać parametry do typu zadania jaki nas interesuje.
+  
+2. **Wybieranie wartości opcjonalnych**
+
+- W przypadku gdy chcemy stworzyć bardzo specyficzne zadanie możemy wpisać w te pola wartości celem dodania dodatkowych instrukcji dla generatora przy tworzeniu zadania.
+- Można uzupełnić dowolną ilość pól, od 0 do wszystkich dostępnych, w zależności od naszej decyzji.
+
+3. **Generacja questa**
+
+- Należy nacisnąć przycisk "GENERUJ"
+
+4. **Manualna edycja questa**
+
+- Jeżeli chcemy coś zmienić, to pole, w którm generuje się treść zadania pozostawia nam możliwość edycji przed dodaniem. Wystarczy nacisnąć na pole i edytować tekst.
+
+5. **Dodawanie questa**
+
+- Należy nacisnąć przycisk "DODAJ"
+
+6. **Lista questów**
+
+- W odrębnym polu znajduje się lista dodanych questów.
+- Jeżeli chcemy usunąć questa, klikamy ikonkę kosza przy nazwie questa, który chcemy usunąć.
+- Jeżeli chcemy edytować questa, klikamy ikonkę ołówka przy nazwie questa, który chcemy edytować.
+- W przypadku edycji wracamy do okienka opisanego powyżej, zasady są takie same.
+
 ## Lista pól rozwijanych:
 
 1. **Typ gry:**
@@ -12,6 +43,7 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 
 2. **Typ questa:**
    - [ ] Zabójstwo
+   - [ ] Eksterminacja
    - [ ] Zbieranie
    - [ ] Eksploracja
    - [ ] Interakcja NPC
@@ -74,4 +106,4 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 
 ---
 
-*Projekt stworzony przez [Twoja Nazwa/Firmę].*
+*Projekt stworzony przez Zespół Rafał-Igor-Daniel-Kacper.*
