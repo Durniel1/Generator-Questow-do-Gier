@@ -33,12 +33,12 @@ class QuestGeneratorApp:
         self.ilosc_czesci_dropdown = tk.OptionMenu(self.root, self.ilosc_czesci_var, "Jedna", "Wieloetapowy")  # Lista rozwijana dla ilości części questa
         self.ilosc_czesci_dropdown.grid(row=2, column=1, padx=10, pady=5, sticky='w')  # Ustawienie listy rozwijanej w oknie
         
-        # Trudność questa
-        label_trudnosc = tk.Label(self.root, text="Trudność:", bg='lightgrey')  # Etykieta dla trudności questa
+        # Trudność
+        label_trudnosc = tk.Label(self.root, text="Trudność:", bg='lightgrey')  # Etykieta dla trudności
         label_trudnosc.grid(row=3, column=0, padx=10, pady=5, sticky='w')  # Ustawienie etykiety w oknie
         
-        self.trudnosc_var = tk.StringVar()  # Zmienna przechowująca trudność questa
-        self.trudnosc_dropdown = tk.OptionMenu(self.root, self.trudnosc_var, "Łatwy", "Średni", "Trudny")  # Lista rozwijana dla trudności questa
+        self.trudnosc_var = tk.StringVar()  # Zmienna przechowująca trudność
+        self.trudnosc_dropdown = tk.OptionMenu(self.root, self.trudnosc_var, "Łatwy", "Średni", "Trudny")  # Lista rozwijana dla trudności
         self.trudnosc_dropdown.grid(row=3, column=1, padx=10, pady=5, sticky='w')  # Ustawienie listy rozwijanej w oknie
         
         # Zaangażowane przedmioty
@@ -57,39 +57,39 @@ class QuestGeneratorApp:
         self.zaangazowane_npc_dropdown = tk.OptionMenu(self.root, self.zaangazowane_npc_var, "Tak", "Nie")  # Lista rozwijana dla zaangażowanych NPC
         self.zaangazowane_npc_dropdown.grid(row=5, column=1, padx=10, pady=5, sticky='w')  # Ustawienie listy rozwijanej w oknie
         
-        # Opcjonalne wartości
-        # Tutaj dodajemy pola na opcjonalne wartości, podobnie jak w poprzedniej wersji kodu...
-        
-        # Pole tekstowe dla nazwy postaci głównej
+        # Nazwa postaci głównej
         label_nazwa_postaci = tk.Label(self.root, text="Nazwa postaci głównej:", bg='lightgrey')  # Etykieta dla nazwy postaci głównej
         label_nazwa_postaci.grid(row=6, column=0, padx=10, pady=5, sticky='w')  # Ustawienie etykiety w oknie
         
         self.nazwa_postaci_entry = tk.Entry(self.root)  # Pole tekstowe dla nazwy postaci głównej
         self.nazwa_postaci_entry.grid(row=6, column=1, padx=10, pady=5, sticky='w')  # Ustawienie pola tekstowego w oknie
         
-        # Tutaj dodajemy pozostałe pola opcjonalne, podobnie jak w poprzedniej wersji kodu...
-        
-        # Pole tekstowe dla nazwy questa
+        # Nazwa questa
         label_nazwa_questa = tk.Label(self.root, text="Nazwa questa:", bg='lightgrey')  # Etykieta dla nazwy questa
         label_nazwa_questa.grid(row=7, column=0, padx=10, pady=5, sticky='w')  # Ustawienie etykiety w oknie
         
         self.nazwa_questa_entry = tk.Entry(self.root)  # Pole tekstowe dla nazwy questa
         self.nazwa_questa_entry.grid(row=7, column=1, padx=10, pady=5, sticky='w')  # Ustawienie pola tekstowego w oknie
         
-        # Tutaj dodajemy pozostałe pola opcjonalne, podobnie jak w poprzedniej wersji kodu...
-        
-        # Pole tekstowe dla lokacji questa
+        # Lokacja questa
         label_lokacja_questa = tk.Label(self.root, text="Lokacja questa:", bg='lightgrey')  # Etykieta dla lokacji questa
         label_lokacja_questa.grid(row=8, column=0, padx=10, pady=5, sticky='w')  # Ustawienie etykiety w oknie
         
         self.lokacja_questa_entry = tk.Entry(self.root)  # Pole tekstowe dla lokacji questa
         self.lokacja_questa_entry.grid(row=8, column=1, padx=10, pady=5, sticky='w')  # Ustawienie pola tekstowego w oknie
         
-        # Tutaj dodajemy pozostałe pola opcjonalne, podobnie jak w poprzedniej wersji kodu...
+        # Pole tekstowe do wyświetlania treści questa
+        self.text_questa_label = tk.Label(self.root, text="Treść questa:", bg='lightgrey')  # Etykieta dla pola tekstowego
+        self.text_questa_label.grid(row=12, column=0, padx=10, pady=5, sticky='w')  # Ustawienie etykiety w oknie
         
-        # Tutaj dodajemy przyciski, takie jak "Dodaj do listy", "Edytuj", "Usuń", podobnie jak w poprzedniej wersji kodu...
+        self.text_questa_textbox = tk.Text(self.root, height=5, width=50)  # Pole tekstowe dla treści questa
+        self.text_questa_textbox.grid(row=13, column=0, columnspan=2, padx=10, pady=5)  # Ustawienie pola tekstowego w oknie
         
-        # Tutaj dodajemy resztę przycisków i elementów interfejsu, podobnie jak w poprzedniej wersji kodu...
+        # Przycisk generowania questa
+        self.generuj_button = tk.Button(self.root, text="Generuj Quest", command=self.generuj_quest, bg='lightblue', fg='white')  # Przycisk generowania questa
+        self.generuj_button.grid(row=14, column=0, columnspan=2, padx=10, pady=5)  # Ustawienie przycisku w oknie
+        
+        # Tutaj dodajemy pozostałe przyciski i elementy interfejsu, podobnie jak w poprzedniej wersji kodu...
         
     def generuj_quest(self):
         typ_gry = self.typ_gry_var.get()  # Pobranie wybranego typu gry
