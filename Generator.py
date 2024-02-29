@@ -117,6 +117,10 @@ class QuestGeneratorApp:
         
         return generated_text
 
+def dodaj_do_listy(self):
+        generated_quest = self.text_questa_textbox.get("1.0", tk.END)  # Pobranie wygenerowanego questa z pola tekstowego
+        self.quest_listbox.insert(tk.END, generated_quest)  # Dodanie questa do listy
+
 root = tk.Tk()
 app = QuestGeneratorApp(root)
 root.mainloop()
