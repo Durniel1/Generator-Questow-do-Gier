@@ -101,9 +101,20 @@ class QuestGeneratorApp:
         self.usun_button = tk.Button(self.root, text="Usuń", command=self.usun_z_listy, bg='salmon', fg='white')  # Przycisk usuwania questa z listy
         self.usun_button.grid(row=16, column=3, padx=5, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
         
-        # Przycisk edycji questa
+         # Przycisk edycji questa
         self.edytuj_button = tk.Button(self.root, text="Edytuj", command=self.edytuj_questa, bg='lightgrey', fg='black')  # Przycisk edycji questa
         self.edytuj_button.grid(row=16, column=4, padx=5, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
+        
+        # Pole tekstowe do edycji questa
+        self.text_edit_label = tk.Label(self.root, text="Edytuj treść questa:", bg='lightgrey')  # Etykieta dla pola tekstowego
+        self.text_edit_label.grid(row=17, column=0, padx=10, pady=5, sticky='w')  # Ustawienie etykiety w oknie
+        
+        self.text_edit_textbox = tk.Text(self.root, height=5, width=50)  # Pole tekstowe do edycji questa
+        self.text_edit_textbox.grid(row=18, column=0, columnspan=2, padx=10, pady=5)  # Ustawienie pola tekstowego w oknie
+        
+        # Przycisk zatwierdzający edycję questa
+        self.zatwierdz_button = tk.Button(self.root, text="Zatwierdź", command=self.zatwierdz_edycje, bg='lightgrey', fg='black')  # Przycisk zatwierdzający edycję questa
+        self.zatwierdz_button.grid(row=19, column=0, columnspan=2, padx=10, pady=5)  # Ustawienie przycisku w oknie
     
     def generuj_quest(self):
         typ_gry = self.typ_gry_var.get()  # Pobranie wybranego typu gry
@@ -143,8 +154,15 @@ class QuestGeneratorApp:
         selected_index = self.quest_listbox.curselection()  # Pobranie indeksu zaznaczonego questu
         if selected_index:
             selected_quest = self.quest_listbox.get(selected_index)  # Pobranie treści zaznaczonego questu
-            self.text_questa_textbox.delete('1.0', tk.END)  # Wyczyszczenie pola tekstowego
-            self.text_questa_textbox.insert(tk.END, selected_quest)  # Wstawienie treści zaznaczonego questu do pola tekstowego
+            self.text_edit_textbox.delete('1.0', tk.END)  # Wyczyszczenie pola tekstowego
+            self.text_edit_textbox.insert(tk.END, selected_quest)  # Wstawienie treści zaznaczonego questu do pola tekstowego
+            
+    def zatwierdz_edycje(self):
+        selected_index = self.quest_listbox.curselection()  # Pobranie indeksu zaznaczonego questu
+        if selected_index:
+            edited_text = self.text_edit_textbox.get("1.0", tk.END)  # Pobranie edytowanego tekstu z pola tekstowego
+            self.quest_listbox.delete(selected_index)  # Usunięcie starego tekstu z listy
+            self.quest_listbox.insert(selected_index, edited_text)  # Wstawienie edytowanego tekstu do listy
 
 root = tk.Tk()
 app = QuestGeneratorApp(root)
