@@ -89,8 +89,14 @@ class QuestGeneratorApp:
         self.generuj_button = tk.Button(self.root, text="Generuj Quest", command=self.generuj_quest, bg='lightblue', fg='white')  # Przycisk generowania questa
         self.generuj_button.grid(row=14, column=0, columnspan=2, padx=10, pady=5)  # Ustawienie przycisku w oknie
         
-        # Tutaj dodajemy pozostałe przyciski i elementy interfejsu, podobnie jak w poprzedniej wersji kodu...
+        # Przycisk dodawania questa do listy
+        self.dodaj_button = tk.Button(self.root, text="Dodaj do Listy", command=self.dodaj_do_listy, bg='lightgreen', fg='black')  # Przycisk dodawania questa do listy
+        self.dodaj_button.grid(row=15, column=0, columnspan=2, padx=10, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
         
+        # Lista wygenerowanych questów
+        self.quest_listbox = tk.Listbox(self.root, height=10, width=50)  # Lista wygenerowanych questów
+        self.quest_listbox.grid(row=16, column=0, columnspan=2, padx=10, pady=5)  # Ustawienie listy w oknie
+    
     def generuj_quest(self):
         typ_gry = self.typ_gry_var.get()  # Pobranie wybranego typu gry
         # Tutaj możesz napisać logikę generowania tekstu questa na podstawie wybranych opcji
