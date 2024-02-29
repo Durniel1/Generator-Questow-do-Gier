@@ -99,11 +99,11 @@ class QuestGeneratorApp:
 
         # Przycisk usuwania questa z listy
         self.usun_button = tk.Button(self.root, text="Usuń", command=self.usun_z_listy, bg='salmon', fg='white')  # Przycisk usuwania questa z listy
-        self.usun_button.grid(row=16, column=3, padx=5, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
+        self.usun_button.grid(row=16, column=2, padx=5, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
         
          # Przycisk edycji questa
         self.edytuj_button = tk.Button(self.root, text="Edytuj", command=self.edytuj_questa, bg='lightgrey', fg='black')  # Przycisk edycji questa
-        self.edytuj_button.grid(row=16, column=4, padx=5, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
+        self.edytuj_button.grid(row=16, column=3, padx=5, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
         
         # Pole tekstowe do edycji questa
         self.text_edit_label = tk.Label(self.root, text="Edytuj treść questa:", bg='lightgrey')  # Etykieta dla pola tekstowego
@@ -114,7 +114,7 @@ class QuestGeneratorApp:
         
         # Przycisk zatwierdzający edycję questa
         self.zatwierdz_button = tk.Button(self.root, text="Zatwierdź", command=self.zatwierdz_edycje, bg='lightgrey', fg='black')  # Przycisk zatwierdzający edycję questa
-        self.zatwierdz_button.grid(row=19, column=0, columnspan=2, padx=10, pady=5)  # Ustawienie przycisku w oknie
+        self.zatwierdz_button.grid(row=18, column=2, columnspan=2, padx=10, pady=5)  # Ustawienie przycisku w oknie
     
     def generuj_quest(self):
         typ_gry = self.typ_gry_var.get()  # Pobranie wybranego typu gry
