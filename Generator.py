@@ -96,6 +96,14 @@ class QuestGeneratorApp:
         # Lista wygenerowanych questów
         self.quest_listbox = tk.Listbox(self.root, height=10, width=50)  # Lista wygenerowanych questów
         self.quest_listbox.grid(row=16, column=0, columnspan=2, padx=10, pady=5)  # Ustawienie listy w oknie
+
+        # Przycisk usuwania questa z listy
+        self.usun_button = tk.Button(self.root, text="Usuń", command=self.usun_z_listy, bg='salmon', fg='white')  # Przycisk usuwania questa z listy
+        self.usun_button.grid(row=16, column=3, padx=5, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
+        
+        # Przycisk edycji questa
+        self.edytuj_button = tk.Button(self.root, text="Edytuj", command=self.edytuj_questa, bg='lightgrey', fg='black')  # Przycisk edycji questa
+        self.edytuj_button.grid(row=16, column=4, padx=5, pady=5, sticky='ew')  # Ustawienie przycisku w oknie
     
     def generuj_quest(self):
         typ_gry = self.typ_gry_var.get()  # Pobranie wybranego typu gry
@@ -123,9 +131,20 @@ class QuestGeneratorApp:
         
         return generated_text
 
-def dodaj_do_listy(self):
+    def dodaj_do_listy(self):
         generated_quest = self.text_questa_textbox.get("1.0", tk.END)  # Pobranie wygenerowanego questa z pola tekstowego
         self.quest_listbox.insert(tk.END, generated_quest)  # Dodanie questa do listy
+    def usun_z_listy(self):
+        selected_index = self.quest_listbox.curselection()  # Pobranie indeksu zaznaczonego questu
+        if selected_index:
+            self.quest_listbox.delete(selected_index)  # Usunięcie zaznaczonego questu z listy
+    
+    def edytuj_questa(self):
+        selected_index = self.quest_listbox.curselection()  # Pobranie indeksu zaznaczonego questu
+        if selected_index:
+            selected_quest = self.quest_listbox.get(selected_index)  # Pobranie treści zaznaczonego questu
+            self.text_questa_textbox.delete('1.0', tk.END)  # Wyczyszczenie pola tekstowego
+            self.text_questa_textbox.insert(tk.END, selected_quest)  # Wstawienie treści zaznaczonego questu do pola tekstowego
 
 root = tk.Tk()
 app = QuestGeneratorApp(root)
