@@ -11,7 +11,7 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 
 2. **Generacja questa**
 
-- Należy nacisnąć przycisk "GENERUJ", z pliku .txt losuje się scenariusz z dobranym klimatem oraz celem questa.
+- Należy nacisnąć przycisk enter, z pliku .txt losuje się scenariusz z dobranym klimatem oraz celem questa.
 - W pliku .txt zmienne "X" zostaną zamienione na losowe zmienne z bazy danych.
 - Na koniec generator połączy informacje z inputów, pliku .txt, oraz bazy danych, i wygeneruje nam quest.
 
@@ -31,11 +31,6 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
    - [ ] Zbieranie
    - [ ] Eksploracja
    - [ ] Interakcja NPC
-
-## Przyciski:
-
-- **Generuj Quest:**
-  - Generuje tekst questa w polu powyżej.
     
 ---
 
