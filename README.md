@@ -39,7 +39,7 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
    - [ ] Sci-Fi
 
 3. **Cel zadania:**
-   - [ ] Zabójstwo
+   - [ ] Boss Fight
    - [ ] Eksterminacja
    - [ ] Zbieranie
    - [ ] Eksploracja
