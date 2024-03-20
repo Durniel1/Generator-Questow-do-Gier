@@ -15,7 +15,7 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 
 3. **Manualna edycja questa**
 
-- Jeżeli chcemy coś zmienić, to pole, w którm generuje się treść zadania pozostawia nam możliwość edycji przed dodaniem. Wystarczy nacisnąć na pole i edytować tekst.
+- Jeżeli chcemy coś zmienić, to pole, w którym generuje się treść zadania pozostawia nam możliwość edycji przed dodaniem. Wystarczy nacisnąć na pole i edytować tekst.
 
 4. **Dodawanie questa**
 
@@ -33,9 +33,9 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 1. **Nazwa Questa:**
 
 2. **Setting gry:**
-   - [ ] Fantasy
+   - [ ] Fantasy/Medieval
    - [ ] Post-Apocaliptic
-   - [ ] Medieval
+   - [ ] Teraźniejszość
    - [ ] Sci-Fi
 
 3. **Cel zadania:**
