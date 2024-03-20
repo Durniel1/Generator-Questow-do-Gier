@@ -4,29 +4,16 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 
 ## Instrukcja użytkowania:
 
-1. **Wybieranie wartości wymaganych**
+1. **Wpisywanie wartości**
 
-- Należy wybrać z list rozwijanych wartości potrzebne dla generatera w celu stworzenia zadania.
+- Należy wpisać i wybrać z list rozwijanych wartości potrzebne dla generatera w celu stworzenia zadania.
 - Każda z list daje opcje wyboru 1 wartości, należy dobrać parametry do typu zadania jaki nas interesuje.
 
 2. **Generacja questa**
 
-- Należy nacisnąć przycisk "GENERUJ"
-
-3. **Manualna edycja questa**
-
-- Jeżeli chcemy coś zmienić, to pole, w którym generuje się treść zadania pozostawia nam możliwość edycji przed dodaniem. Wystarczy nacisnąć na pole i edytować tekst.
-
-4. **Dodawanie questa**
-
-- Należy nacisnąć przycisk "DODAJ"
-
-5. **Lista questów**
-
-- W odrębnym polu znajduje się lista dodanych questów.
-- Jeżeli chcemy usunąć questa, klikamy ikonkę kosza przy nazwie questa, który chcemy usunąć.
-- Jeżeli chcemy edytować questa, klikamy ikonkę ołówka przy nazwie questa, który chcemy edytować.
-- W przypadku edycji wracamy do okienka opisanego powyżej, zasady są takie same.
+- Należy nacisnąć przycisk "GENERUJ", z pliku .txt losuje się scenariusz z dobranym klimatem oraz celem questa.
+- W pliku .txt zmienne "X" zostaną zamienione na losowe zmienne z bazy danych.
+- Na koniec generator połączy informacje z inputów, pliku .txt, oraz bazy danych, i wygeneruje nam quest.
 
 ## Lista pól do wpisywania wartości:
 
@@ -45,34 +32,11 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
    - [ ] Eksploracja
    - [ ] Interakcja NPC
 
-## Text questa:
-
-- [ ] Edytowalne pole tekstu questa
-
 ## Przyciski:
 
 - **Generuj Quest:**
   - Generuje tekst questa w polu powyżej.
-
-- **Dodaj do Listy:**
-  - Dodaje tekst questa z pola powyżej do listy wygenerowanych questów.
-
-## Lista Wygenerowanych Questów:
-
-1. **Nazwa questa 1**
-   - Edytuj
-   - Usuń
-
-2. **Nazwa questa 2**
-   - Edytuj
-   - Usuń
-
-3. **Nazwa questa 3**
-   - Edytuj
-   - Usuń
-
-... (dodawane dynamicznie)
-
+    
 ---
 
 *Projekt stworzony przez Zespół Rafał-Igor-Daniel-Kacper.*
