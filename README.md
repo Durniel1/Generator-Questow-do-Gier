@@ -31,7 +31,17 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
    - [ ] Zbieranie
    - [ ] Eksploracja
    - [ ] Interakcja NPC
-    
+
+
+## Działanie:
+
+**1. plik .txt:**
+- Każda linijka jest wydzielona przy pomocy enter a następnie znaku "-"
+- Każda linijka odpawiada pojedyńczemu scenariuszowi
+- Każdy scenariusz posiada miejsce na zmienne oznaczone symbolami "XXX"
+- Na końcu każdego scenariusza w dwóch oddzielonych spacją słowach jest legenda dotycząca kategorii i celu scenariusza
+
+
 ---
 
 *Projekt stworzony przez Zespół Rafał-Igor-Daniel-Kacper.*
