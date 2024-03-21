@@ -12,7 +12,7 @@ class TaskGenerator:
 
     def load_scenario(self):
         with open('Scenarios.txt', 'r') as file:
-            scenarios = [(i, line.split("-")[1].split("|")[0].strip()) for i, line in enumerate(file, start=1) if line.strip().endswith(f' | {self.setting} {self.goal}')]
+            scenarios = [(i, line.split("-")[1].split("|")[0].strip()) for i, line in enumerate(file, start=1) if line.strip().endswith(f'| {self.setting} {self.goal}')]
         if not scenarios:  # Check if scenarios is empty
             print("No matching scenarios found.")
             return
