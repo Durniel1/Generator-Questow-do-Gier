@@ -5,6 +5,11 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import ttk
 import time
+import logging
+import threading
+
+logging.basicConfig(filename='app.log', level=logging.DEBUG, 
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 
 class TaskGenerator:
     """Handles the generation of tasks."""
@@ -18,18 +23,20 @@ class TaskGenerator:
         self.task = None
 
     def load_scenario(self):
-        """Loads a scenario from a file."""
         try:
             with open('Scenarios.txt', 'r', encoding='utf-8') as file:
                 scenarios = [(i, line.split("-")[1].split("|")[0].strip()) for i, line in enumerate(file, start=1) if line.strip().endswith(f'| {self.setting} {self.goal}')]
-            if not scenarios:  # Check if scenarios is empty
-                print("No matching scenarios found.")
+            if not scenarios:
+                logging.warning("No matching scenarios found.")
+                messagebox.showwarning("Warning", "No matching scenarios found.")
                 return
             self.scenario_index, self.scenario = random.choice(scenarios)
-            self.task = self.scenario  # Set self.task to the loaded scenario
+            self.task = self.scenario
         except FileNotFoundError:
+            logging.error("Scenarios.txt file not found.")
             messagebox.showerror("Error", "Scenarios.txt file not found.")
         except Exception as e:
+            logging.error(str(e))
             messagebox.showerror("Error", str(e))
 
 
@@ -132,7 +139,12 @@ class Application(tk.Tk):
 
     def open_tutorial(self):
         """Opens the tutorial file."""
-        os.startfile('tutorial.txt')
+        try:
+            os.startfile('tutorial.txt')
+        except FileNotFoundError:
+            messagebox.showerror("Error", "tutorial.txt file not found.")
+        except Exception as e:
+            messagebox.showerror("Error", str(e))
 
     def show_quest(self, task):
         """Shows the generated quest in a new window."""
@@ -150,16 +162,23 @@ class Application(tk.Tk):
         goal = self.goal_var.get()
     
         generator = TaskGenerator(name, setting, goal)
-        task = generator.generate_task()
     
-        # Update the progress bar in steps
+        def generate_and_show_task():
+            task = generator.generate_task()
+            if task:
+                generator.save_task()
+                self.show_quest(task)
+    
+        thread = threading.Thread(target=generate_and_show_task)
+        thread.start()
+    
+        self.update_progress_bar()
+    
+    def update_progress_bar(self):
         for i in range(1, 101):
             self.progress['value'] = i
             self.update_idletasks()
             time.sleep(0.01)
-    
-        generator.save_task()
-        self.show_quest(task)
 
 if __name__ == "__main__":
     app = Application()
