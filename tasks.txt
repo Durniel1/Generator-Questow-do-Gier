@@ -1,0 +1,11 @@
+User Interface Improvements: Improve the user interface by adding more spacing between elements, using more attractive colors, or even using a more modern UI library.
+
+Help/Instructions: Provide a help section or instructions on how to use the application. This could be a separate window that opens with a click of a button, or tooltips that appear when the user hovers over an element.
+
+Progress Indicators: If generating a task takes a long time, consider adding a progress bar or spinner to indicate that the application is working.
+
+Settings/Preferences: Allow users to customize the application to their liking. This could include things like changing the theme of the application, choosing the location where tasks are saved, etc.
+
+Keyboard Shortcuts: Implement keyboard shortcuts for common actions to improve usability for power users.123: Witaj, poszukiwaczu przygód! Jestem profesorem astroarcheologii z Centrum Studiów nad Starożytnością Kosmiczną. Poszukuję odważnej osoby, która pomoże mi odnaleźć sztuczne konstrukcje. Twoje zadanie to prześledzenie śladów w odległych układach planetarnych i odnalezienie unikatowy artefakt. Nagrodą będzie honorowe miejsce w historii i x4.
+123: Witaj, najemniku! Jestem agentem Korporacji TerraNova. Potrzebuję kogoś do infiltracji bazy wrogów i pozyskania zapasy energii. Twoje zadanie to dostanie się do satelity szpiegowskiego, przełamanie systemów bezpieczeństwa i wykradnięcie zapasy energii. W zamian za udaną misję otrzymasz prawo do ziemi na kolonii.
+123: Witaj, najemniku! Jestem agentem Sekcji Specjalnej Alpha. Potrzebuję kogoś do infiltracji bazy wrogów i pozyskania kody dostępu. Twoje zadanie to dostanie się do bazy na księżycu, przełamanie systemów bezpieczeństwa i wykradnięcie kody dostępu. W zamian za udaną misję otrzymasz złote żetony.

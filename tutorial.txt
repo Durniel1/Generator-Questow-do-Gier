@@ -1,0 +1,17 @@
+Welcome to the Task Generator application!
+
+Here's how to use it:
+
+1. Enter name of your task in the 'Name' field. Your name can only contain letters and numbers.
+
+2. Select a setting from the 'Setting' dropdown menu.
+
+3. Select a goal from the 'Goal' dropdown menu.
+
+4. Click the 'Generate' button to generate a task based on your name, setting, and goal.
+
+5. A new window will open displaying your generated task. You can close this window when you're done reading the task.
+
+6. If you want to generate a new task, simply change the name, setting, or goal and click the 'Generate' button again.
+
+Enjoy using the Task Generator!
