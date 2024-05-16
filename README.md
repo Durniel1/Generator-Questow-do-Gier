@@ -20,9 +20,8 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 1. **Nazwa Questa:**
 
 2. **Setting gry:**
-   - [ ] Fantasy/Medieval
-   - [ ] Post-Apocaliptic
-   - [ ] Teraźniejszość
+   - [ ] Fantasy
+   - [ ] Medieval
    - [ ] Sci-Fi
 
 3. **Cel zadania:**
@@ -38,9 +37,13 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 **1. plik .txt:**
 - Każda linijka jest wydzielona przy pomocy enter a następnie znaku "-"
 - Każda linijka odpawiada pojedyńczemu scenariuszowi
-- Każdy scenariusz posiada miejsce na zmienne oznaczone symbolami "XXX"
+- Każdy scenariusz posiada miejsce na zmienne oznaczone symbolami "X*" gdzie "*" to numer parametru
 - Na końcu każdego scenariusza w dwóch oddzielonych spacją słowach jest legenda dotycząca kategorii i celu scenariusza
 
+**2. Baza Danych:**
+- Każdy scenariusz ma kilka losowych parametrów
+- Każda tabela odpowiada pojedyńczemu questowi
+- W każdej tabeli jest kilka kolumn z wartościami (parametrami) do questów losujących się do questa z tej samej tabeli
 
 ---
 
