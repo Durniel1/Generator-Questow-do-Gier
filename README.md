@@ -19,12 +19,14 @@ Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych za
 
 1. **Nazwa Questa:**
 
-2. **Setting gry:**
+- Pole przyjmuje tylko znaki alfanumeryczne oraz spację
+
+2. **Setting gry (Lista Rozwijana):**
    - [ ] Fantasy
    - [ ] Medieval
    - [ ] Sci-Fi
 
-3. **Cel zadania:**
+3. **Cel zadania (Lista Rozwijana):**
    - [ ] Boss Fight
    - [ ] Eksterminacja
    - [ ] Zbieranie
