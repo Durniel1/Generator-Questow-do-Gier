@@ -2,6 +2,12 @@
 
 Projekt generatora questów do gier, umożliwiający tworzenie różnorodnych zadań i przygód dla postaci gracza.
 
+## Uruchamianie aplikacji:
+Aby uruchomić generator należy:
+1. Pobrać repozytorium
+2. Otworzyć projekt w edytorze kodu obsługującym pliki języka python
+3. Rozpocząć działanie pliku Generator.py (otwiera się okno aplikacji)
+
 ## Instrukcja użytkowania:
 
 1. **Wpisywanie wartości**
