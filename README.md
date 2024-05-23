@@ -7,7 +7,7 @@ Aby uruchomić generator należy:
 1. Pobrać główną gałąź repozytorium
 2. Otworzyć projekt w edytorze kodu obsługującym pliki języka python
 3. Rozpocząć działanie pliku Generator.py (otwiera się okno aplikacji)
-
+![App](https://github.com/Durniel1/Generator-Questow-do-Gier/blob/main/App.png?raw=true)
 ## Instrukcja użytkowania:
 
 1. **Wpisywanie wartości**
@@ -20,6 +20,12 @@ Aby uruchomić generator należy:
 - Należy nacisnąć przycisk enter, z pliku .txt losuje się scenariusz z dobranym klimatem oraz celem questa.
 - W pliku .txt zmienne "X" zostaną zamienione na losowe zmienne z bazy danych.
 - Na koniec generator połączy informacje z inputów, pliku .txt, oraz bazy danych, i wygeneruje nam quest.
+
+3. **Uzyskanie pomocy**
+
+- W lewym górnym rogu aplikacji znajduje się przycisk 'Help'
+- Po jego naciśnięciu otwiera się plik tutorial.txt, w którym znajduje pełna instrukcja użytkowania aplikacji
+![App](https://github.com/Durniel1/Generator-Questow-do-Gier/blob/main/Tutorial.png?raw=true)
 
 ## Lista pól do wpisywania wartości:
 
