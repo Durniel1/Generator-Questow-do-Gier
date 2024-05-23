@@ -1,0 +1,7 @@
+123: Hej, podróżniku kosmiczny! Jestem kapitanem statku handlowego Void Marauder. Stracono kontakt z jednym z naszych statków z cennym ładunkiem na pokładzie. Twoje zadanie to odnalezienie zaginionego statku i odzyskanie antymateria. Po powrocie otrzymasz nagrodę w postaci nowy statek.
+gdgf: Wędrowcze! Nasz kapłan, x1, zaginął w okolicach lasu x2, gdzie miał wykonywać rytuał dla zbliżającej się uroczystości x3. Czy mógłbyś pomóc nam odnaleźć go przed nadejściem zmroku?
+gdgf: Wędrowcze! Nasz kapłan, x1, zaginął w okolicach lasu x2, gdzie miał wykonywać rytuał dla zbliżającej się uroczystości x3. Czy mógłbyś pomóc nam odnaleźć go przed nadejściem zmroku?
+gdgf: Witaj, podróżniku. Nasz feudał, Miastem Królewskim, zbiera daninę w tej porze roku, lecz udało nam się zebrać jedynie odważny rycerz, Sirion potrzebnej ilości. Czy mógłbyś pomóc nam w zebraniu potrzebnych dóbr, abyśmy mogli spełnić jego wymagania i uniknąć jego gniewu? Nagrodą będzie część zbiorów Patrona Podróżnych
+ w przyszłym roku.
+gdgf: Wędrowcze! Nasz kapłan, Lech, zaginął w okolicach lasu Puszcza Kozienicka, gdzie miał wykonywać rytuał dla zbliżającej się uroczystości Rytuału Wiosennego
+. Czy mógłbyś pomóc nam odnaleźć go przed nadejściem zmroku?
